@@ -1,20 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Upgrades - Ormsby Guitars</title>
-    <!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> <!-- Spray-style font -->
-
-    <!-- Custom Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS for animated background and styles -->
     <style>
+        body {
+            /* Animated gradient background with blue, azure, green, and red */
+            background: linear-gradient(-45deg, #1e3c72, #2a5298, #23d5ab, #ff4e50);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .page-header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 100px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animate title: fade-in and slide down */
+        .page-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            color: #ffffff;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            opacity: 0; /* Start hidden */
+            transform: translateY(-30px); /* Slide down effect */
+            animation: fadeInSlideDown 1s ease forwards 0.5s; /* Animation starts after 0.5s */
+        }
+
+        /* Animate subheading: fade-in and slide up */
+        .page-header p {
+            font-size: 1.5em;
+            color: #f0f0f0;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+            opacity: 0; /* Start hidden */
+            transform: translateY(30px); /* Slide up effect */
+            animation: fadeInSlideUp 1s ease forwards 1s; /* Animation starts after 1s */
+        }
+
+        /* Keyframes for title animation */
+        @keyframes fadeInSlideDown {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateY(0); /* Slide down to normal position */
+            }
+        }
+
+        /* Keyframes for subheading animation */
+        @keyframes fadeInSlideUp {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateY(0); /* Slide up to normal position */
+            }
+        }
+
+        @keyframes moveParticles {
+            from { background-position: 0 0; }
+            to { background-position: 10000px 5000px; }
+        }
+
+        .accordion-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .accordion-button {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #000;
+            font-weight: bold;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #000;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .brand-text {
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Additional styling */
+        .accordion-body ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .accordion-body ol {
+            padding-left: 20px;
+        }
+
+        .accordion-body li {
+            margin-bottom: 10px;
+        }
         body {
             margin: 0;
             padding: 0;
