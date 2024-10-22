@@ -1,0 +1,284 @@
+/* Custom Stylesheet */
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s;
+}
+
+.navbar-brand .brand-text {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+}
+
+/* Cards */
+.card-title i {
+    color: #0066cc;
+    margin-right: 10px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+    border-color: #0066cc;
+    color: #0066cc;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: #0066cc;
+}
+
+/* Responsive Text Sizes */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation Styles */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-text,
+.animate-btn {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+}
+
+.animated {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+/* Set delays using CSS variables */
+.animate-text:nth-of-type(1) {
+    --animation-delay: 0.5s;
+}
+
+.animate-text:nth-of-type(2) {
+    --animation-delay: 0.7s;
+}
+
+.animate-btn {
+    --animation-delay: 0.9s;
+}
+
+#guitar-360 img {
+    width: 100%;
+    height: auto;
+    max-width: 450px; /* Puoi cambiare la dimensione massima se preferisci */
+    display: block;
+    margin: 0 auto;
+}
+
+.option-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+.option-circle:hover {
+    border: 2px solid #0066cc;
+}
+
+/* CSS for Guitar Customization Component */
+
+/* General Styling for Customization Section */
+#guitar-360, #guitar-customizer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    cursor: grab;
+}
+
+.image-frame {
+    border: 4px solid #0066cc; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Inner spacing between the border and the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow to add depth */
+    background-color: #f9f9f9; /* Background color of the frame */
+}
+
+/* Styling for Customization Option Circles */
+.option-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+.option-circle:hover {
+    border: 2px solid #0066cc;
+}
+
+/* Colors for Neck Types */
+.option-circle[data-value="maple"] {
+    background-color: #f5deb3; /* Light wood color for Maple */
+}
+
+.option-circle[data-value="rosewood"] {
+    background-color: #8b4513; /* Dark wood color for Rosewood */
+}
+
+/* Colors for Guitar Body */
+.option-circle[data-value="gray_burst"] {
+    background-color: #696969; /* Gray Burst Color */
+}
+
+.option-circle[data-value="sunburst"] {
+    background-color: #ff8c00; /* Sunburst Color */
+}
+
+.option-circle[data-value="surf_green"] {
+    background-color: #7fffd4; /* Surf Green Color */
+}
+
+/* Colors for Pickguard */
+.option-circle[data-value="red_pearloid"] {
+    background-color: #b22222; /* Red Pearloid Color */
+}
+
+.option-circle[data-value="black"] {
+    background-color: #000; /* Black Pickguard */
+}
+
+.option-circle[data-value="white"] {
+    background-color: #fff; /* White Pickguard */
+}
+
+/* Colors for Pickup */
+.option-circle[data-value="white"] {
+    background-color: #fff; /* White Pickup */
+}
+
+.option-circle[data-value="black"] {
+    background-color: #000; /* Black Pickup */
+}
+
+/* Add animation for the fade-in and upward motion */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* Apply the animation to the heading and button */
+.animate-fade-up {
+    animation: fadeUp 2s ease-out; /* Duration of 2 seconds */
+    opacity: 0; /* Start invisible */
+    animation-fill-mode: forwards; /* Stay visible after animation ends */
+}
+#discover-button {
+    animation-delay: 1s; /* Delay of 1 second for the button */
+}

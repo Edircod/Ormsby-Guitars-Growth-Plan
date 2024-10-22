@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ormsby Guitars Growth Plan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styles for the Gradient Background Animation -->
+    <style>
+        @keyframes rgb-gradient {
+            0% { background-color: rgba(255, 0, 0, 0.3); }
+            25% { background-color: rgba(0, 255, 0, 0.3); }
+            50% { background-color: rgba(0, 0, 255, 0.3); }
+            75% { background-color: rgba(255, 255, 0, 0.3); }
+            100% { background-color: rgba(255, 0, 0, 0.3); }
+        }
+
+        /* Apply the animation to the card for Website Enhancements */
+        .rgb-gradient {
+            animation: rgb-gradient 15s infinite; /* Slower animation */
+            background-size: 400% 400%;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Styling to ensure the text is readable on the changing background */
+        .rgb-gradient .card-title, .rgb-gradient .card-text, .rgb-gradient .btn {
+            color: rgb(0, 0, 0) !important;
+        }
+
+        .rgb-gradient .btn {
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Ormsby Guitars Logo" width="40" height="40" class="d-inline-block align-text-top">
+                <span class="brand-text">Ormsby Guitars Growth Plan</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 animate-fade-up" id="main-heading">Elevate. Innovate. Inspire.</h1>
+            <p class="lead animate-fade-up" id="roadmap-text">Discover the roadmap to amplify Ormsby Guitars' global presence.</p>
+            <a href="#sections" class="btn btn-primary btn-lg mt-4 animate-fade-up" id="discover-button">Explore the Plan</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5" id="sections">
+        <div class="row">
+            <!-- Section Cards -->
+            <!-- 1. Strengthening Brand Identity -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-bullhorn"></i> Strengthening Brand Identity</h5>
+                        <p class="card-text">Develop a cohesive brand strategy that resonates with our audience.</p>
+                        <a href="brand_identity.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. Digital Marketing Strategy -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-chart-line"></i> Digital Marketing Strategy</h5>
+                        <p class="card-text">Implement multi-channel campaigns to increase reach and conversions.</p>
+                        <a href="digital_marketing.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3. Enhancing Social Media Presence -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-thumbs-up"></i> Enhancing Social Media Presence</h5>
+                        <p class="card-text">Boost engagement and grow our community across platforms.</p>
+                        <a href="social_media.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 4. Creation of High-Quality Content -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-pen-nib"></i> Creation of High-Quality Content</h5>
+                        <p class="card-text">Produce engaging content to attract and retain customers.</p>
+                        <a href="content_creation.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 5. Managing Artist Relations -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-users"></i> Managing Artist Relations</h5>
+                        <p class="card-text">Strengthen partnerships with artists to amplify our brand.</p>
+                        <a href="artist_relations.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 6. Communication with Dealers and Distributors -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-handshake"></i> Communication with Dealers</h5>
+                        <p class="card-text">Enhance collaborations with global dealers and distributors.</p>
+                        <a href="communication.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 7. Optimization of Advertising and SEO -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-search"></i> Optimization of Advertising & SEO</h5>
+                        <p class="card-text">Improve online visibility through targeted campaigns and SEO.</p>
+                        <a href="advertising_seo.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 8. CRM Management -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-database"></i> CRM Management</h5>
+                        <p class="card-text">Enhance customer relationships through effective CRM strategies.</p>
+                        <a href="crm_management.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 9. Website Enhancements and Upgrades -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm rgb-gradient">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-laptop-code"></i> Website Enhancements</h5>
+                        <p class="card-text">Upgrade our website for better user experience and functionality.</p>
+                        <a href="website_upgrades.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 10. Production of Visual Content -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-camera"></i> Production of Visual Content</h5>
+                        <p class="card-text">Create compelling visual content to captivate our audience.</p>
+                        <a href="visual_content.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Ormsby Guitars Growth Plan</p>
+        <p class="mt-3">Website designed and developed by Paride Misuraca</p> | <a href="https://www.ormsbyguitars.com/" class="text-white">Visit Official Site</a></p>
+        <div>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script>
+        document.getElementById('discover-button').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            // Get the target section and the height of the navbar
+            const targetSection = document.getElementById('sections');
+            const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get the height of the fixed navbar
+
+            // Calculate the target position accounting for the navbar height
+            const offset = targetSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+            // Scroll smoothly to the target position
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth' // Smooth scroll effect
+            });
+        });
+    </script>
+</body>
+</html>
